@@ -1,15 +1,7 @@
-Cosas necesarias para hacer funcionar este codigo:
-
-Una base de datos postgres, con la tabla:
-CREATE TABLE public."SPACESHIPS"
-(
-    "ID" integer,
-    "NAME" character varying,
-    "SERIES_OR_MOVIE" character varying,
-    PRIMARY KEY ("ID")
-);
-
-en este caso se ha configurado la base de datos con nombre "pruebaTecnicaW2M"
-En la url  localhost:5432/pruebaTecnicaW2M. (Mas detalles en el application.properties)
+Se ha agregado flyway para el control de DDL, el cual ya por defecto creara la tabla necesaria para hacer funcionar este codigo, pero se necesita una base de datos
+postgresql.
+jdbc:postgresql://localhost:5432/pruebaTecnicaW2M
+Se ha dejado un usuario y contraseña por defecto "postgres" en ambos casos.
+En los test de integracion vienen todos los posibles endpoints para hacer pruebas, solo es necesario importar el JSON en postman.
 
 Se han creado test de integracion que apuntan a la url generica de localhost:8080
