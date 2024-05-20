@@ -1,0 +1,5 @@
+CREATE TABLE SPACESHIPS (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    series_or_movie VARCHAR(255) NOT NULL
+);

@@ -1,0 +1,15 @@
+Cosas necesarias para hacer funcionar este codigo:
+
+Una base de datos postgres, con la tabla:
+CREATE TABLE public."SPACESHIPS"
+(
+    "ID" integer,
+    "NAME" character varying,
+    "SERIES_OR_MOVIE" character varying,
+    PRIMARY KEY ("ID")
+);
+
+en este caso se ha configurado la base de datos con nombre "pruebaTecnicaW2M"
+En la url  localhost:5432/pruebaTecnicaW2M. (Mas detalles en el application.properties)
+
+Se han creado test de integracion que apuntan a la url generica de localhost:8080
